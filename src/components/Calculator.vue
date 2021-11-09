@@ -55,9 +55,6 @@ export default {
       this.currentOperator = op;
       this.expression = `${this.firstValue} ${this.currentOperator} ${this.secondValue}`;
       this.result = eval(this.expression);
-      setTimeout(() => {
-        this.expression = "";
-      }, 3000);
     },
   },
 };
